@@ -8,6 +8,7 @@ import Header from './componet/header/Header'
 import Hero from './componet/hero/Hero'
 import PopupMenue from './componet/PopupMenue'
 import Projects from './componet/projects/Projects'
+import Skills from './componet/Skills/Skills'
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
         <Header />
         <Hero />
         <Projects />
+        <Skills />
         <PopupMenue />
       </div>
     </Provider>

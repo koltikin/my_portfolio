@@ -12,6 +12,13 @@ import accounting from '../assets/images/projects/ui-project-2.jpg';
 import ecommerace from '../assets/images/projects/web-project-1.jpg';
 import etlas from '../assets/images/projects/web-project-2.jpg';
 
+import figma from "../assets/images/skills/figma.png";
+import sketch from "../assets/images/skills/sketch.png";
+import ps from "../assets/images/skills/ps.png";
+import reactjs from "../assets/images/skills/react.png";
+import nodejs from "../assets/images/skills/node.png";
+import python from "../assets/images/skills/python.png";
+
 export const projects = [
     {
         title: 'Ticketing App',
@@ -46,6 +53,44 @@ export const projects = [
         details: '#projects',
     },
 ];
+
+export const skills = {
+    title: "Skills",
+    subtitle: "MY TOP SKILLS",
+    skills_content: [
+        {
+            name: "Figma",
+            para: "Lorem ipsum text  dummy",
+            logo: figma,
+        },
+        {
+            name: "Node js",
+            para: "Lorem ipsum text  dummy",
+            logo: nodejs,
+        },
+        {
+            name: "Adobe Photoshop",
+            para: "Lorem ipsum text  dummy",
+            logo: ps,
+        },
+        {
+            name: "React js",
+            para: "Lorem ipsum text  dummy",
+            logo: reactjs,
+        },
+        {
+            name: "Sketch",
+            para: "Lorem ipsum text  dummy",
+            logo: sketch,
+        },
+        {
+            name: "Python",
+            para: "Lorem ipsum text  dummy",
+            logo: python,
+        },
+    ],
+    icon: MdArrowForward,
+}
 
 export const headrMenue =
     [
