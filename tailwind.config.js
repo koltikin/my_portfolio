@@ -19,6 +19,20 @@ export default {
         secondary_dark: '#102D44',
         ternary_dark: '#1E3851',
       },
+      fontFamily: {
+        sans: ['Roboto', 'sans-serif'],
+        nerko: 'Nerko One',
+        paprika: 'Paprika',
+        inria:'Inria Serif',
+        poppins:'Poppins',
+        rubik:'Rubik',
+        hind:'Hind Siliguri',
+        hand:'Just Another Hand',
+        dafoe:['Mr Dafoe'],
+        montez:'Montez',
+        sarina:'Sarina',
+
+      },
       container: {
         center: true,
         padding: {

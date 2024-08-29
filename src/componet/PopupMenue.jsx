@@ -12,8 +12,8 @@ function PopupMenue() {
     return (
         <div className="w-full flex justify-center">
             <nav
-                className={`fixed  z-[999] flex items-center gap-5 bg-slate-200/60 px-6 py-3 backdrop-blur-md rounded-full dark:bg-gray-700 dark:backdrop-blur-md duration-300 ${menueOpen ? "bottom-7" : "bottom-[-100%]"
-                    } sm:hidden`}
+                className={`fixed  z-[999] flex items-center gap-5 bg-slate-200/60 px-6 py-2 backdrop-blur-md rounded-full dark:bg-gray-700/65 duration-300 ${menueOpen ? "bottom-3" : "bottom-[-100%]"
+                    } md:hidden`}
             >
                 {nav.map((item, i) => (
                     <a key={i}

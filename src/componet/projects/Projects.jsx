@@ -2,6 +2,7 @@ import React from 'react'
 import { FaGithub } from 'react-icons/fa';
 import { projects } from '../../content/Content'
 import { AiOutlineGlobal } from "react-icons/ai";
+import Butttons from './Butttons';
 
 
 function Projects() {
@@ -11,7 +12,7 @@ function Projects() {
                 <h1
                     data-aos="fade-down"
                     data-aos-delay={200}
-                    className='text-3xl font-bold text-center mb-[60px] pt-[60px] dark:text-white'>Some of My Projects</h1>
+                    className='sm:text-3xl text-2xl px-5 sm:px-0 sm:text-start font-paprika mb-[20px] sm:mb-[40px] pt-[60px] dark:text-white'>SOME OF MY PROJECTS</h1>
                 <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10'>
                     {projects.map((project, index) => (
                         <div
@@ -22,15 +23,9 @@ function Projects() {
                                 <h3 className='text-xl font-bold mb-2'>{project.title}</h3>
                                 <p className='mb-4'>{project.description}</p>
                                 <div className='flex justify-center gap-2 items-center mt-8'>
-                                    <a href={project.githubLink} className='flex items-center text-sm gap-2 bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600'>
-                                        <FaGithub className='text-xl' /> GitHub Repo
-                                    </a>
-                                    <a href={project.liveDemo} className='flex items-center text-sm gap-2 bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600'>
-                                        <AiOutlineGlobal className='text-xl' /> Live Demo
-                                    </a>
-                                    <a href={project.details} className='text-sm bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600'>
-                                        Details
-                                    </a>
+                                    <Butttons link={project.links.githubLink} icon={FaGithub} text='GitHub Repo' />
+                                    <Butttons link={project.links.liveDemo} icon={FaGithub} text='Live Demo' />
+                                    <Butttons link={project.links.details} text='About Pro' />
                                 </div>
                             </div>
                         </div>

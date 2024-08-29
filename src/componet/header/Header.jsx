@@ -22,8 +22,8 @@ function Header() {
                 <div className='container flex justify-between items-center'>
                     {/* Left Section (Logo) */}
                     <div className='flex-shrink-0 ml-2 sm:ml-0'>
-                        <a href='#' className='font-bold text-2xl sm:text-3xl flex gap-2 items-center'>
-                            <img className='w-[36px] h-auto uppercase' alt='logo' src={Logo} />
+                        <a href='#' className='font-bold font-dafoe text-2xl sm:text-4xl flex gap-2 items-center'>
+                            {/* <img className='w-[36px] h-auto uppercase' alt='logo' src={Logo} /> */}
                             Ziya
                         </a>
                     </div>

@@ -8,7 +8,7 @@ import Header from './componet/header/Header'
 import Hero from './componet/hero/Hero'
 import PopupMenue from './componet/PopupMenue'
 import Projects from './componet/projects/Projects'
-import Skills from './componet/Skills/Skills'
+import Skills from './componet/skills/Skills'
 
 function App() {
 
