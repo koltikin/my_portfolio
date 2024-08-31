@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import Logo from '../../assets/images/ziya.svg';
 import DarkModeButton from './DarkModeButton';
 import NavLink from '../NavLink';
 import { IoMdMenu } from "react-icons/io";
 import { toggleMenu } from '../../redux/slice/PopUpSlice';
-import PopupMenue from '../PopupMenue';
 import { headrMenue } from '../../content/Content';
+import { IoClose } from "react-icons/io5";
 
 function Header() {
     const dispatch = useDispatch();
     const [activeLink, setActiveLink] = useState(0);
+
+    const isMenuOpen = useSelector((state) => state.popUp.isMenuOpen);
 
     const handlePopUp = () => {
         dispatch(toggleMenu());
@@ -50,8 +52,11 @@ function Header() {
                     </div>
 
                     {/* Mobile Menu Icon */}
-                    <div className='md:hidden absolute left-1/2 transform -translate-x-1/2'>
-                        <IoMdMenu className='text-3xl cursor-pointer' onClick={handlePopUp} />
+                    <div onClick={handlePopUp} className='md:hidden absolute left-1/2 transform -translate-x-1/2'>
+                        {
+                            isMenuOpen ? < IoClose className='text-3xl cursor-pointer' /> : <IoMdMenu className='text-3xl cursor-pointer' />
+                        }
+
                     </div>
                 </div>
             </div>
