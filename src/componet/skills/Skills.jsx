@@ -21,7 +21,7 @@ const Skills = () => {
                             key={i}
                             data-aos="fade-up"
                             data-aos-delay={i * 400}
-                            className="bg-white sm:cursor-pointer dark:bg-primary_dark/50
+                            className="bg-white sm:cursor-pointer dark:bg-slate-900/10
                        relative group w-full flex flex-col
                        p-5 max-w-sm rounded-md border-2 border-slate-200"
                         >
