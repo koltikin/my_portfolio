@@ -15,12 +15,62 @@
     @apply font-bold hover:text-blue-500 dark:hover:text-primary transition-colors duration-200;
 }
 
-body {
-    @apply bg-white;
-    /* Default light mode background color */
+.light {
+    --primary: 235, 141, 25;
+    --primary-content: 5, 3, 0;
+    --primary-dark: 192, 114, 17;
+    --primary-light: 239, 164, 72;
+
+    --secondary: 25, 119, 235;
+    --secondary-content: 255, 255, 255;
+    --secondary-dark: 17, 95, 192;
+    --secondary-light: 72, 147, 239;
+
+    --background: 240, 240, 240;
+    --foreground: 251, 251, 251;
+    --border: 223, 223, 223;
+
+    --copy: 38, 38, 38;
+    --copy-light: 102, 102, 102;
+    --copy-lighter: 140, 140, 140;
+
+    --success: 25, 235, 25;
+    --warning: 235, 235, 25;
+    --error: 235, 25, 25;
+    --success-content: 0, 5, 0;
+    --warning-content: 5, 5, 0;
+    --error-content: 255, 255, 255;
+
+    background: rgba(var(--background));
+    color: rgba(var(--copy));
 }
 
-body.dark {
-    @apply dark:bg-primary_dark;
-    /* Dark mode background color */
+.dark {
+    --primary: 235, 141, 25;
+    --primary-content: 5, 3, 0;
+    --primary-dark: 192, 114, 17;
+    --primary-light: 239, 164, 72;
+
+    --secondary: 25, 119, 235;
+    --secondary-content: 255, 255, 255;
+    --secondary-dark: 17, 95, 192;
+    --secondary-light: 72, 147, 239;
+
+    --background: 26, 26, 26;
+    --foreground: 38, 38, 38;
+    --border: 64, 64, 64;
+
+    --copy: 251, 251, 251;
+    --copy-light: 217, 217, 217;
+    --copy-lighter: 166, 166, 166;
+
+    --success: 25, 235, 25;
+    --warning: 235, 235, 25;
+    --error: 235, 25, 25;
+    --success-content: 0, 5, 0;
+    --warning-content: 5, 5, 0;
+    --error-content: 255, 255, 255;
+
+    background: rgba(var(--background));
+    color: rgba(var(--copy));
 }

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import Logo from '../../assets/images/ziya.svg';
 import DarkModeButton from './DarkModeButton';
 import NavLink from '../NavLink';
 import { IoMdMenu } from "react-icons/io";
@@ -19,12 +18,12 @@ function Header() {
     };
 
     return (
-        <div className=' fixed w-[100%] bg-white dark:bg-primary_dark dark:drop-shadow-[1px_1px_1px_white] dark:text-white z-40'>
+        <div className=' fixed w-[100%] bg-theme_fg  dark:drop-shadow-[1px_1px_1px_white] z-40'>
             <div className='shadow-md bg-primary-light py-4 px-2'>
                 <div className='container flex justify-between items-center'>
                     {/* Left Section (Logo) */}
                     <div className='flex-shrink-0 ml-2 sm:ml-0'>
-                        <a href='#' className='font-bold font-dafoe text-2xl sm:text-4xl flex gap-2 items-center'>
+                        <a href='#' className='font-bold text-theme_fg_copy font-dafoe text-2xl sm:text-4xl flex gap-2 items-center'>
                             {/* <img className='w-[36px] h-auto uppercase' alt='logo' src={Logo} /> */}
                             Ziya
                         </a>

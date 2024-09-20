@@ -12,7 +12,8 @@ import accounting from '../assets/images/projects/ui-project-2.jpg';
 import ecommerace from '../assets/images/projects/web-project-1.jpg';
 import etlas from '../assets/images/projects/web-project-2.jpg';
 
-import figma from "../assets/images/skills/figma.png";
+import { Icon } from '@iconify/react';
+
 import backend from "../assets/images/skills/backend.png";
 import ps from "../assets/images/skills/ps.png";
 import reactjs from "../assets/images/skills/react.png";
@@ -69,16 +70,31 @@ export const skills = {
             name: "BackEnd",
             description: "BackEnd development with Java Spring Boot",
             logo: backend,
+            skills: [
+                'Java',
+                'Spring-boot',
+                'Hibernate',
+                'SQL',
+                'Restful API',
+                'Kafka',
+
+            ]
         },
         {
             name: "FrontEnd",
             description: "FrontEnd devolopment with React",
             logo: reactjs,
+            icons: [
+
+            ]
         },
         {
             name: "UI & Graphic Design",
             description: "UI & Graphic Design with adobe apps",
             logo: ps,
+            skills: [
+
+            ]
         }
     ],
     icon: MdArrowForward,
@@ -108,7 +124,7 @@ export const headrMenue =
         }
     ];
 
-export const content = {
+export const popUpMenuecontent = {
 
     nav: [
         {
@@ -134,4 +150,11 @@ export const content = {
     ],
 
 }
+
+
+export const content = {
+
+}
+
+
 export default content;

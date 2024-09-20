@@ -5,15 +5,15 @@ import { skills } from "../../content/Content";
 const Skills = () => {
 
     return (
-        <div className="min-h-fit bg-bg_light_primary" id="skills">
+        <div className="min-h-fit bg-theme_bg" id="skills">
             {/* content */}
             <div className="md:container px-5  py-14 mt-[80px]">
-                <h2 className="title text-3xl" data-aos="fade-down">
+                <h1 className="title text-3xl ext-theme_bg_copy" data-aos="fade-down">
                     {skills.title}
-                </h2>
-                <h4 className="font-paprika text-3xl text-gray-500/50" data-aos="fade-down">
+                </h1>
+                <h1 className="font-paprika text-3xl text-theme_bg_copy/60 pt-2" data-aos="fade-down">
                     {skills.subtitle}
-                </h4>
+                </h1>
                 <br />
                 <div className="flex flex-wrap gap-4 justify-center">
                     {skills.skills_content.map((skill, i) => (
@@ -21,9 +21,9 @@ const Skills = () => {
                             key={i}
                             data-aos="fade-up"
                             data-aos-delay={i * 400}
-                            className="bg-white sm:cursor-pointer dark:bg-slate-900/10
+                            className="bg-white sm:cursor-pointer bg-theme_fg
                        relative group w-full flex flex-col
-                       p-5 max-w-sm rounded-md border-2 border-slate-200"
+                       p-5 max-w-sm rounded-md border-2 border-theme_border"
                         >
                             <div className="flex items-center gap-5">
                                 <img
@@ -31,9 +31,19 @@ const Skills = () => {
                                     alt="..."
                                     className="w-[50px] group-hover:scale-125 duration-200"
                                 />
-                                <h6 className="font-bold text-lg">{skill.name}</h6>
+                                <h2 className="font-bold text-lg text-theme_fg_copy">{skill.name}</h2>
                             </div>
-                            <p className="mt-3 text-sm">{skill.description}</p>
+                            <p className="mt-4 text-sm text-theme_bg_copy">{skill.description}</p>
+                            <div className="flex flex-wrap mt-4">
+                                {skill.skills && skill.skills.map((sk, index) => (
+                                    <div key={index} className="m-1">
+                                        <button className="bg-secondary text-white px-3 py-1 hover:bg-secondary_dark rounded-md w-auto">
+                                            {sk}
+                                        </button>
+                                    </div>
+                                ))}
+                            </div>
+
                         </div>
                     ))}
                 </div>

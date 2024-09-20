@@ -8,16 +8,25 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#fea928",
-        secondary: "#ed8900",
+        primary: "rgba(var(--primary))",
+        primary_content: "rgba(var(--primary-content))",
+        primary_dark: "rgba(var(--primary-dark))",
+        primary_light: "rgba(var(--primary-light))",
 
-        primary_light: '#F7F8FC',
-        secondary_light: '#eef2ff',
-        ternary_light: '#f6f7f8',
+        secondary: "rgba(var(--secondary))",
+        secondary_content: "rgba(var(--secondary-content))",
+        secondary_dark: "rgba(var(--secondary-dark))",
+        secondary_light: "rgba(var(--secondary-light))",
+        
+        theme_fg: "rgba(var(--foreground))",
+        theme_bg: "rgba(var(--background))",
+        theme_border: "rgba(var(--border))",
 
-        primary_dark: '#0D2438',
-        secondary_dark: '#102D44',
-        ternary_dark: '#1E3851',
+        theme_fg_copy: "rgba(var(--copy))",
+        theme_bg_copy: "rgba(var(--copy-light))",
+        theme_copy_lighter: "rgba(var(--copy-lighter))",
+
+
       },
       fontFamily: {
         sans: ['Roboto', 'sans-serif'],

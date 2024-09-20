@@ -7,9 +7,9 @@ import { useSelector } from 'react-redux';
 function Hero() {
     const theme = useSelector((state) => state.theme.theme)
     return (
-        <div id='aboutme' className='relative overflow-hidden min-h-[550px] sm:min-h-[650px] flex items-center'>
+        <div id='aboutme' className='relative overflow-hidden bg-theme_bg min-h-[550px] sm:min-h-[650px] flex items-center'>
             {/* Background pattern */}
-            <div className='h-[700px] w-[700px] bg-primary/40 absolute -top-1/2 right-0 rounded-3xl rotate-45 -z-9'></div>
+            <div className='h-[700px] w-[700px] bg-primary_light absolute -top-1/2 right-0 rounded-3xl rotate-45'></div>
 
             {/* Hero section */}
             <div className='container pb-8 sm:pb-0 mt-20'>
@@ -20,7 +20,7 @@ function Hero() {
                             data-aos="zoom-out"
                             data-aos-duration="500"
                             data-aos-once="true"
-                            className="text-3xl sm:text-4xl lg:text-5xl font-bold"
+                            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-theme_fg_copy"
                         >
                             Hi I Am Ziya Kasgari
                         </h1>
@@ -28,7 +28,7 @@ function Hero() {
                             data-aos="fade-up"
                             data-aos-duration="500"
                             data-aos-delay="100"
-                            className="text-2xl"
+                            className="text-2xl text-theme_bg_copy"
                         >
                             A Full-Stack Developer & Design Enthusiast A Full-Stack Developer & Design Enthusiast A Full-Stack Developer & Design Enthusiast
                         </p>
@@ -39,7 +39,7 @@ function Hero() {
                             className='mt-4 shadow-md'
                         >
                             <button
-                                className="flex items-center gap-2 text-md sm:text-xl bg-secondary_light hover:scale-105 border-solid border-2 border-indigo-300 duration-200 text-gray-600 py-2 px-4 sm:py-3 sm:px-6 rounded-md hover:text-white hover:bg-blue-500"
+                                className="flex items-center gap-2 text-md sm:text-xl bg-secondary hover:scale-105 duration-200 text-white py-3 px-4 sm:py-4 sm:px-6 rounded-md hover:text-white hover:bg-secondary_dark"
                             >
                                 <FiArrowDownCircle className=" text-xl sm:text-2xl" />
                                 Download CV

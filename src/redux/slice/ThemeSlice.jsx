@@ -11,20 +11,14 @@ const themeSlice = createSlice({
         toggleTheme: (state) => {
             state.theme = state.theme === 'light' ? 'dark' : 'light';
             localStorage.setItem('theme', state.theme);
-            if (state.theme === 'dark') {
-                document.documentElement.classList.add('dark');
-            } else {
-                document.documentElement.classList.remove('dark');
-            }
+            document.body.classList.toggle('dark', state.theme === 'dark');
+            document.body.classList.toggle('light', state.theme === 'light');
         },
         setTheme: (state, action) => {
             state.theme = action.payload;
             localStorage.setItem('theme', state.theme);
-            if (state.theme === 'dark') {
-                document.documentElement.classList.add('dark');
-            } else {
-                document.documentElement.classList.remove('dark');
-            }
+            document.body.classList.toggle('dark', state.theme === 'dark');
+            document.body.classList.toggle('light', state.theme === 'light');
         },
     },
 });

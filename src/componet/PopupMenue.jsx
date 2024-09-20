@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import content from '../content/Content'
+import { popUpMenuecontent } from '../content/Content';
 import { createElement } from "react";
 import { useSelector } from 'react-redux';
 
 function PopupMenue() {
-    const { nav } = content;
+    const { nav } = popUpMenuecontent;
     const [active, setActive] = useState(0);
 
     const menueOpen = useSelector((state) => state.popUp.isMenuOpen)

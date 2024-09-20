@@ -23,13 +23,11 @@ function App() {
   }, [])
   return (
     <Provider store={store}>
-      <div className='bg-white dark:bg-primary_dark dark:text-white'>
-        <Header />
-        <Hero />
-        <Projects />
-        <Skills />
-        <PopupMenue />
-      </div>
+      <Header />
+      <Hero />
+      <Projects />
+      <Skills />
+      <PopupMenue />
     </Provider>
   )
 }
