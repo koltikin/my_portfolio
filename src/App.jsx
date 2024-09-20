@@ -4,11 +4,7 @@ import { Provider } from 'react-redux'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from 'react'
-import Header from './componet/header/Header'
-import Hero from './componet/hero/Hero'
-import PopupMenue from './componet/PopupMenue'
-import Projects from './componet/projects/Projects'
-import Skills from './componet/skills/Skills'
+import Wrapper from './componet/Wrapper'
 
 function App() {
 
@@ -23,11 +19,7 @@ function App() {
   }, [])
   return (
     <Provider store={store}>
-      <Header />
-      <Hero />
-      <Projects />
-      <Skills />
-      <PopupMenue />
+      <Wrapper />
     </Provider>
   )
 }
