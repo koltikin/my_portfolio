@@ -10,12 +10,12 @@ import { setTheme } from '../redux/slice/ThemeSlice'
 
 function Wrapper() {
 
-    const dispatch = useDispatch();
-    const theme = useSelector((store) => store.theme.theme)
+    // const dispatch = useDispatch();
+    // const theme = useSelector((store) => store.theme.theme)
 
-    useEffect(() => {
-        dispatch(dispatch(setTheme(theme)))
-    }, []);
+    // useEffect(() => {
+    //     dispatch(dispatch(setTheme(theme)))
+    // }, []);
     return (
         <>
             <Header />

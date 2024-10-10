@@ -11,11 +11,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Sarina&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
 
-.menulink {
+/* .menulink {
     @apply font-bold hover:text-blue-500 dark:hover:text-primary transition-colors duration-200;
-}
+} */
 
-.light {
+.default-light {
     --primary: 235, 141, 25;
     --primary-content: 5, 3, 0;
     --primary-dark: 192, 114, 17;
@@ -45,7 +45,7 @@
     color: rgba(var(--copy));
 }
 
-.dark {
+.default-dark {
     --primary: 235, 141, 25;
     --primary-content: 5, 3, 0;
     --primary-dark: 192, 114, 17;
