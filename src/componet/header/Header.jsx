@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import DarkModeButton from './DarkModeButton';
 import NavLink from '../NavLink';
 import { IoMdMenu } from "react-icons/io";
@@ -8,6 +8,7 @@ import { headrMenue } from '../../content/Content';
 import { IoClose } from "react-icons/io5";
 
 function Header() {
+    const dispatch = useDispatch();
     const [activeLink, setActiveLink] = useState(0);
 
     const isMenuOpen = useSelector((state) => state.popUp.isMenuOpen);
