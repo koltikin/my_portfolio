@@ -1,7 +1,6 @@
 import React from 'react'
 import { FaGithub } from 'react-icons/fa';
 import { projects } from '../../content/Content'
-import { AiOutlineGlobal } from "react-icons/ai";
 import Butttons from './Butttons';
 
 
@@ -10,7 +9,7 @@ function Projects() {
         <div id='projects' className='w-[100%] bg-theme_bg'>
             <div className='container mt-[80px]'>
 
-                <h1 data-aos="fade-down" data-aos-delay="200" class="text-theme_fg_copy sm:text-3xl text-2xl px-5 sm:px-0 sm:text-start pt-[60px]  aos-init aos-animate">Projects</h1>
+                <h1 data-aos="fade-down" data-aos-delay="200" className="text-theme_fg_copy sm:text-3xl text-2xl px-5 sm:px-0 sm:text-start pt-[60px]  aos-init aos-animate">Projects</h1>
 
                 <h1
                     data-aos="fade-down"

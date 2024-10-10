@@ -1,8 +1,6 @@
 
 // import icons from react-icons
-import { GrMail } from "react-icons/gr";
 import { MdArrowForward, MdCall } from "react-icons/md";
-import { BsInstagram } from "react-icons/bs";
 import { TbSmartHome } from "react-icons/tb";
 import { BiUser } from "react-icons/bi";
 import { RiServiceLine, RiProjectorLine } from "react-icons/ri";
@@ -11,8 +9,6 @@ import ticketing from '../assets/images/projects/ui-project-1.jpg';
 import accounting from '../assets/images/projects/ui-project-2.jpg';
 import ecommerace from '../assets/images/projects/web-project-1.jpg';
 import etlas from '../assets/images/projects/web-project-2.jpg';
-
-import { Icon } from '@iconify/react';
 
 import backend from "../assets/images/skills/backend.png";
 import ps from "../assets/images/skills/ps.png";
