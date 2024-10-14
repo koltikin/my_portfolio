@@ -1,5 +1,5 @@
 import { FaMoon } from "react-icons/fa";
-import { IoIosSunny } from "react-icons/io";
+import { Icon } from '@iconify/react';
 import { useDispatch, useSelector } from 'react-redux';
 import { changeThemeMode, toggleThemeMode } from "../../redux/slice/ThemeSlice";
 import { useEffect } from "react";
@@ -47,14 +47,14 @@ function DarkModeButton() {
 
     return (
         <div
-            className="flex items-center w-[40px] h-5 p-1 rounded-full bg-gray-200 dark:bg-gray-600 cursor-pointer drop-shadow-[1px_1px_1px_rgba(0,0,0,0.1)] dark:drop-shadow-[1px_1px_1px_white]"
+            className="flex items-center w-[24px] h-[24px] md:w-[41px] md:h-[21px] border border-theme_border hover:border-primary_light rounded-full bg-theme_bg cursor-pointer md:drop-shadow-[1px_1px_1px_white]"
             onClick={handleToggle}
         >
-            <div className={`transform ${themeMode === 'dark' ? 'translate-x-full' : ''} transition-transform duration-300`}>
+            <div className={`transform bg-theme_fg rounded-full p-[1px] ${themeMode === 'dark' ? 'md:translate-x-full' : ''} transition-transform duration-300`}>
                 {themeMode === 'dark' ? (
-                    < FaMoon className="h-4 w-4 text-primary" />
+                    <Icon icon="line-md:sunny-outline-to-moon-loop-transition" className="w-[18px] h-[18px] sm:h-4 sm:w-4" />
                 ) : (
-                    <IoIosSunny className="h-4 w-4 text-blue-500" />
+                    <Icon icon="line-md:sunny-loop" className="w-[20px] h-[20px] sm:h-4 sm:w-4" />
                 )}
             </div>
         </div>

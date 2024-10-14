@@ -37,7 +37,7 @@ const Skills = () => {
                             <div className="flex flex-wrap mt-4">
                                 {skill.skills && skill.skills.map((sk, index) => (
                                     <div key={index} className="m-1">
-                                        <button className="bg-secondary text-white px-3 py-1 hover:bg-secondary_dark rounded-md w-auto">
+                                        <button className="bg-primary text-primary_content px-3 py-1 hover:bg-primary_dark rounded-md w-auto">
                                             {sk}
                                         </button>
                                     </div>

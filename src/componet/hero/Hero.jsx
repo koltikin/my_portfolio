@@ -5,11 +5,11 @@ import { FiArrowDownCircle } from 'react-icons/fi';
 import { useSelector } from 'react-redux';
 
 function Hero() {
-    const theme = useSelector((state) => state.theme.theme)
+    const themeMode = useSelector((state) => state.theme.themeMode)
     return (
         <div id='aboutme' className='relative overflow-hidden bg-theme_bg min-h-[550px] sm:min-h-[650px] flex items-center'>
             {/* Background pattern */}
-            <div className='h-[700px] w-[700px] bg-primary_light absolute -top-1/2 right-0 rounded-3xl rotate-45'></div>
+            <div className='h-[700px] w-[700px] bg-secondary_light absolute -top-1/2 right-0 rounded-3xl rotate-45'></div>
 
             {/* Hero section */}
             <div className='container pb-8 sm:pb-0 mt-20'>
@@ -39,7 +39,7 @@ function Hero() {
                             className='mt-4 shadow-md'
                         >
                             <button
-                                className="flex items-center gap-2 text-md sm:text-xl bg-secondary hover:scale-105 duration-200 text-white py-3 px-4 sm:py-4 sm:px-6 rounded-md hover:text-white hover:bg-secondary_dark"
+                                className="flex items-center gap-2 text-md sm:text-xl bg-primary hover:scale-105 duration-200 text-primary_content py-3 px-4 sm:py-4 sm:px-6 rounded-md  hover:bg-primary_dark"
                             >
                                 <FiArrowDownCircle className=" text-xl sm:text-2xl" />
                                 Download CV
@@ -55,7 +55,7 @@ function Hero() {
                             className="relative z-10 sm:pt-0 pt-8"
                         >
                             <img
-                                src={theme === 'dark' ? developer : developer_dark}
+                                src={themeMode === 'dark' ? developer : developer_dark}
                                 alt=""
                                 className="w-[400px] h-[400px] sm:h-[650px] sm:w-[650px] sm:scale-105 lg:scale-120 object-contain mx-auto"
                             />
