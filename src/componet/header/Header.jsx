@@ -18,7 +18,7 @@ function Header() {
     };
 
     return (
-        <div className=' fixed w-[100%] bg-theme_fg  dark:drop-shadow-[1px_1px_1px_white] z-40'>
+        <div className=' fixed w-[100%] bg-theme_fg drop-shadow-[1px_1px_1px_white] z-40'>
             <div className='shadow-md bg-primary-light py-4 px-2'>
                 <div className='container flex justify-between items-center'>
                     {/* Left Section (Logo) */}

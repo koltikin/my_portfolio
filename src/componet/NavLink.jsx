@@ -5,7 +5,7 @@ function NavLink({ href, children, isActive, onClick }) {
         <a
             href={href}
             onClick={onClick}
-            className={`hover:text-blue-500 dark:hover:text-primary transition-colors duration-200 ${isActive ? 'dark:text-primary text-blue-500' : ''}`}
+            className={`hover:text-primary_light text-xl  transition-colors duration-200 ${isActive ? 'text-primary_light' : ''}`}
         >
             {children}
         </a>

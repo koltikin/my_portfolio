@@ -47,14 +47,14 @@ function DarkModeButton() {
 
     return (
         <div
-            className="flex items-center w-[40px] h-5 p-1 rounded-full bg-gray-200 dark:bg-gray-600 cursor-pointer drop-shadow-[1px_1px_1px_rgba(0,0,0,0.1)] dark:drop-shadow-[1px_1px_1px_white]"
+            className="flex items-center w-[41px] h-5 p-[3px] border border-theme_border hover:border-primary_light rounded-full bg-theme_bg cursor-pointer drop-shadow-[1px_1px_1px_white]"
             onClick={handleToggle}
         >
-            <div className={`transform ${themeMode === 'dark' ? 'translate-x-full' : ''} transition-transform duration-300`}>
+            <div className={`transform bg-theme_fg rounded-full p-[1px] ${themeMode === 'dark' ? 'translate-x-full' : ''} transition-transform duration-300`}>
                 {themeMode === 'dark' ? (
-                    < FaMoon className="h-4 w-4 text-primary" />
+                    < FaMoon className="h-4 w-4" />
                 ) : (
-                    <IoIosSunny className="h-4 w-4 text-blue-500" />
+                    <IoIosSunny className="h-4 w-4" />
                 )}
             </div>
         </div>
