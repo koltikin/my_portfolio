@@ -152,5 +152,40 @@ export const content = {
 
 }
 
+export const themes = [
+    {
+        name: "default",
+        color: "rgb(17, 125, 192)",
+    },
+    {
+        name: "youtube",
+        color: "rgb(255, 2, 0)",
+    },
+    {
+        name: "twitch",
+        color: "rgb(145, 71, 255)",
+    },
+    {
+        name: "hacker",
+        color: "rgb(70, 153, 235)",
+    },
+    {
+        name: "miro",
+        color: "rgb(255, 221, 51)",
+    },
+    {
+        name: "mangoDB",
+        color: "rgb(0, 237, 100)",
+    },
+    {
+        name: "jetBrian",
+        color: "rgb(107, 86, 255)",
+    },
+    {
+        name: "pusher",
+        color: "rgb(135, 49, 210)",
+    },
+];
+
 
 export default content;

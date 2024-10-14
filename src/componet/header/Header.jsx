@@ -6,6 +6,7 @@ import { IoMdMenu } from "react-icons/io";
 import { toggleMenu } from '../../redux/slice/PopUpSlice';
 import { headrMenue } from '../../content/Content';
 import { IoClose } from "react-icons/io5";
+import MobileThemes from '../themes/MobileThemes';
 
 function Header() {
     const dispatch = useDispatch();
@@ -45,9 +46,14 @@ function Header() {
                         }
                     </div>
 
-                    {/* DarkMode Button */}
-                    <div className="mr-2 sm:mr-0">
-                        <DarkModeButton />
+                    {/* DarkMode Button and themes*/}
+                    <div className='flex justify-center items-center space-x-4'>
+                        <div className='sm:hidden'>
+                            <MobileThemes />
+                        </div>
+                        <div className="mr-2 sm:mr-0">
+                            <DarkModeButton />
+                        </div>
                     </div>
 
                     {/* Mobile Menu Icon */}
@@ -57,6 +63,7 @@ function Header() {
                         }
 
                     </div>
+
                 </div>
             </div>
         </div>
