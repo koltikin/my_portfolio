@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaGithub } from 'react-icons/fa';
-import { projects } from '../../content/Content'
+import { projects } from '../../content/Contents'
 import Butttons from './Butttons';
 
 

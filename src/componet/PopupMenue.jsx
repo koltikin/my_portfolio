@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { popUpMenuecontent } from '../content/Content';
+import { popUpMenuecontent } from '../content/Contents';
 import { createElement } from "react";
 import { useSelector } from 'react-redux';
 

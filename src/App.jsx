@@ -5,9 +5,10 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from 'react'
 import Wrapper from './componet/Wrapper'
+import { useTranslation } from 'react-i18next'
 
 function App() {
-
+  const { i18n } = useTranslation();
   useEffect(() => {
     AOS.init({
       offset: 100,

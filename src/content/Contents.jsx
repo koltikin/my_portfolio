@@ -13,6 +13,47 @@ import etlas from '../assets/images/projects/web-project-2.jpg';
 import backend from "../assets/images/skills/backend.png";
 import ps from "../assets/images/skills/ps.png";
 import reactjs from "../assets/images/skills/react.png";
+import { useTranslation } from "react-i18next";
+
+
+export const useHeaderMenu = () => {
+
+    const { t } = useTranslation('header');
+
+    return {
+        logoLetter: {
+            logo: t("logoLetter"),
+            link: '#aboutme',
+        },
+
+        headerMenu: [
+            {
+                title: t('headerMenu.aboutMe'),
+                link: '#aboutme'
+            },
+            {
+                title: t('headerMenu.projects'),
+                link: '#projects'
+
+            },
+            {
+                title: t('headerMenu.skills'),
+                link: '#skills',
+
+            },
+            {
+                title: t('headerMenu.services'),
+                link: '#services'
+
+            },
+            {
+                title: t('headerMenu.contacts'),
+                link: '#contact'
+
+            }
+        ]
+    };
+};
 
 
 export const projects = [
@@ -96,29 +137,7 @@ export const skills = {
     icon: MdArrowForward,
 }
 
-export const headrMenue =
-    [
-        {
-            link: '#aboutme',
-            title: 'About Me'
-        },
-        {
-            link: '#projects',
-            title: 'Projects'
-        },
-        {
-            link: '#skills',
-            title: 'Skills'
-        },
-        {
-            link: '#services',
-            title: 'Services'
-        },
-        {
-            link: '#contact',
-            title: 'Contact'
-        }
-    ];
+
 
 export const popUpMenuecontent = {
 
@@ -148,9 +167,7 @@ export const popUpMenuecontent = {
 }
 
 
-export const content = {
 
-}
 
 export const themes = [
     {
@@ -188,4 +205,11 @@ export const themes = [
 ];
 
 
-export default content;
+export const languages = [
+    "en",
+    "tr",
+    // "uy",
+    // "ar"
+]
+
+
