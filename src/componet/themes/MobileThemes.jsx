@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useDispatch } from "react-redux";
 import { setTheme } from '../../redux/slice/ThemeSlice'; // Ensure setTheme is correctly imported
-import { themes } from '../../content/Content';
+import { themes } from '../../content/Contents';
 
 const MobileThemes = () => {
     return (

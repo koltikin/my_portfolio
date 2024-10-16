@@ -4,14 +4,17 @@ import DarkModeButton from './DarkModeButton';
 import NavLink from '../NavLink';
 import { IoMdMenu } from "react-icons/io";
 import { toggleMenu } from '../../redux/slice/PopUpSlice';
-import { headrMenue } from '../../content/Content';
+import { useHeaderMenu } from '../../content/Contents';
 import { IoClose } from "react-icons/io5";
 import MobileThemes from '../themes/MobileThemes';
+import LangSwicher from './LangSwicher';
 
 function Header() {
+    const header = useHeaderMenu();
+    const logoLetter = header.logoLetter;
+    const headerMenu = header.headerMenu;
     const dispatch = useDispatch();
     const [activeLink, setActiveLink] = useState(0);
-
     const isMenuOpen = useSelector((state) => state.popUp.isMenuOpen);
 
     const handlePopUp = () => {
@@ -24,16 +27,16 @@ function Header() {
                 <div className='container flex justify-between items-center'>
                     {/* Left Section (Logo) */}
                     <div className='flex-shrink-0 ml-2 sm:ml-0'>
-                        <a href='#' className='font-bold text-theme_fg_copy font-dafoe text-2xl sm:text-4xl flex gap-2 items-center'>
+                        <a href={logoLetter.link} className='font-bold text-theme_fg_copy font-dafoe text-2xl sm:text-4xl flex gap-2 items-center'>
                             {/* <img className='w-[36px] h-auto uppercase' alt='logo' src={Logo} /> */}
-                            Ziya
+                            {logoLetter.logo}
                         </a>
                     </div>
 
                     {/* Middle Menu (for larger screens) */}
                     <div className='hidden md:flex justify-center items-center gap-8 flex-grow'>
                         {
-                            headrMenue && headrMenue.map((menue, i) => (
+                            headerMenu && headerMenu.map((menue, i) => (
                                 <NavLink
                                     key={i}
                                     href={menue.link}
@@ -45,6 +48,10 @@ function Header() {
                             ))
                         }
                     </div>
+
+                    {/* LangSwicher */}
+
+                    <LangSwicher />
 
                     {/* DarkMode Button and themes*/}
                     <div className='flex justify-center items-center space-x-4'>

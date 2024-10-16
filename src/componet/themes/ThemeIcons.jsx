@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { setTheme } from '../../redux/slice/ThemeSlice';
-import { themes } from '../../content/Content'
+import { themes } from '../../content/Contents'
 
 const ThemeIcons = () => {
 

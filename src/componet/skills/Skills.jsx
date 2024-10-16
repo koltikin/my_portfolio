@@ -1,5 +1,5 @@
 // import content
-import { skills } from "../../content/Content";
+import { skills } from "../../content/Contents";
 
 
 const Skills = () => {
