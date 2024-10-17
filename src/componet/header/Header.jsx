@@ -27,7 +27,7 @@ function Header() {
                 <div className='container flex justify-between items-center'>
                     {/* Left Section (Logo) */}
                     <div className='flex-shrink-0 ml-2 sm:ml-0'>
-                        <a href={logoLetter.link} className='font-bold text-theme_fg_copy font-dafoe text-2xl sm:text-4xl flex gap-2 items-center'>
+                        <a href={logoLetter.link} className='font-bold text-secondary font-dafoe text-2xl sm:text-4xl flex gap-2 items-center'>
                             {/* <img className='w-[36px] h-auto uppercase' alt='logo' src={Logo} /> */}
                             {logoLetter.logo}
                         </a>
