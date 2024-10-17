@@ -1,0 +1,10 @@
+{
+    "logoLetter": "Ziya",
+    "headerMenu": {
+        "aboutMe": "About Me",
+        "projects": "Projects",
+        "skills": "Skills",
+        "services": "Services",
+        "contacts": "Contacts"
+    }
+}
