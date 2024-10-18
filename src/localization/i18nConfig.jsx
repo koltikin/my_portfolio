@@ -3,13 +3,13 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector'; // Import the language detector
 
-import enCommon from '../../public/locales/en/common.json'
-import enHeader from '../../public/locales/en/header.json'
-import enHero from '../../public/locales/en/hero.json'
+import enCommon from './locales/en/common.json'
+import enHeader from './locales/en/header.json'
+import enHero from './locales/en/hero.json'
 
-import trCommon from '../../public/locales/tr/common.json'
-import trHeader from '../../public/locales/tr/header.json'
-import trHero from '../../public/locales/tr/hero.json'
+import trCommon from './locales/tr/common.json'
+import trHeader from './locales/tr/header.json'
+import trHero from './locales/tr/hero.json'
 
 const resources = {
     en: {
