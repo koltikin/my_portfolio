@@ -1,10 +1,10 @@
 {
     "logoLetter": "Ziya",
     "headerMenu": {
-        "aboutMe": "Hakkımda",
-        "projects": "Projeler",
-        "skills": "Yetenekler",
-        "services": "Hizmetler",
-        "contacts": "İletişim"
+        "aboutMe": "About Me",
+        "projects": "Projects",
+        "skills": "Skills",
+        "services": "Services",
+        "contacts": "Contacts"
     }
 }
