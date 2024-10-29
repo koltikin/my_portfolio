@@ -1,6 +1,6 @@
 
 // import icons from react-icons
-import { MdArrowForward, MdCall } from "react-icons/md";
+import { MdArrowForward } from "react-icons/md";
 import { TbSmartHome } from "react-icons/tb";
 import { BiUser } from "react-icons/bi";
 import { RiServiceLine, RiProjectorLine } from "react-icons/ri";
@@ -13,8 +13,11 @@ import etlas from '../assets/images/projects/web-project-2.jpg';
 import backend from "../assets/images/skills/backend.png";
 import ps from "../assets/images/skills/ps.png";
 import reactjs from "../assets/images/skills/react.png";
+
 import { useTranslation } from "react-i18next";
 
+import developer from '../assets/images/hero/developer.svg';
+import developer_dark from '../assets/images/hero/developer-dark.svg';
 
 export const useHeaderMenu = () => {
 
@@ -22,7 +25,7 @@ export const useHeaderMenu = () => {
 
     return {
         logoLetter: {
-            logo: t("logoLetter"),
+            logo: t('logoLetter', { logoName: 'Ziya' }),
             link: '#aboutme',
         },
 
@@ -52,6 +55,20 @@ export const useHeaderMenu = () => {
 
             }
         ]
+    };
+};
+
+
+export const useHeroContent = (themeMode) => {
+    const { t } = useTranslation('hero');
+
+    return {
+        textContent: {
+            heading: t('heading', { name: 'Ziya Kasgari' }),
+            subheading: t('subheading'),
+            buttonText: t('buttonText'),
+        },
+        image: themeMode === 'dark' ? developer : developer_dark,
     };
 };
 

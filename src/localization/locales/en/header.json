@@ -1,5 +1,5 @@
 {
-    "logoLetter": "Ziya",
+    "logoLetter": "{{logoName}}",
     "headerMenu": {
         "aboutMe": "About Me",
         "projects": "Projects",
