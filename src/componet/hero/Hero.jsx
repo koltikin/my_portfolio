@@ -19,7 +19,7 @@ function Hero() {
                             data-aos="zoom-out"
                             data-aos-duration="500"
                             data-aos-once="true"
-                            className="text-3xl sm:text-4xl lg:text-5xl text-theme_fg_copy"
+                            className="text-xl sm:text-2xl lg:text-4xl text-theme_fg_copy"
                         >
                             <Trans i18nKey="heading" values={{ name: "Ziya Kasgari" }}>
                                 {textContent.heading}
@@ -29,7 +29,7 @@ function Hero() {
                             data-aos="fade-up"
                             data-aos-duration="500"
                             data-aos-delay="100"
-                            className="text-2xl text-theme_bg_copy"
+                            className="text-md sm:text-xl lg:text-2xl text-theme_bg_copy"
                         >
                             {textContent.subheading}
                         </p>

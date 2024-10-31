@@ -12,7 +12,7 @@ const ThemeIcons = () => {
     }
 
     return (
-        <div className="hidden sm:flex fixed right-6 top-1/3 transform -translate-y-1/2 flex-col space-y-2 z-30">
+        <div className="hidden sm:flex fixed right-6 top-1/3 sm:top-1/3 transform -translate-y-1/2 flex-col space-y-2 z-30">
             {themes && themes.map((theme) => (
                 <button
                     key={theme.name}

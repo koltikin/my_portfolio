@@ -6,7 +6,7 @@ import { themes } from '../../content/Contents';
 
 const MobileThemes = () => {
     return (
-        <div className="flex justify-start bg-primary rounded-full">
+        <div className="flex justify-start bg-primary rounded-full h-5 w-5">
             <Tabs />
         </div>
     );
@@ -53,7 +53,7 @@ const Tab = ({ children, tab, handleSetSelected, selected }) => {
             id={`shift-tab-${tab}`}
             onMouseEnter={() => handleSetSelected(tab)}
             onClick={() => handleSetSelected(tab)}
-            className={`border border-theme_border flex h-full w-full items-center gap-1 rounded-full px-3 py-3 text-sm transition-colors ${selected === tab
+            className={`border border-theme_border flex h-5 w-5 items-center hover:border-secondary gap-1 rounded-full px-1 py-1 text-sm transition-colors ${selected === tab
                 ? "border-secondary"
                 : ""
                 }`}
@@ -138,7 +138,7 @@ const Nub = ({ selected }) => {
     );
 };
 
-const Pricing = () => {
+const themeModal = () => {
     const dispatch = useDispatch();
     const handleClick = (payload) => {
         dispatch(setTheme(payload));
@@ -159,7 +159,7 @@ const Pricing = () => {
 };
 
 const TABS = [
-    { title: "Pricing", Component: Pricing },
+    { title: "themeModal", Component: themeModal },
 ].map((n, idx) => ({ ...n, id: idx + 1 }));
 
 export default MobileThemes;

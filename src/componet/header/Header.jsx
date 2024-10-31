@@ -22,13 +22,13 @@ function Header() {
     };
 
     return (
-        <div className=' fixed w-[100%] bg-theme_fg drop-shadow-[1px_1px_1px_white] z-40'>
-            <div className='shadow-md bg-primary-light py-4 px-2'>
+        <div className='fixed w-[100%] bg-theme_fg drop-shadow-[1px_1px_1px_white] z-40'>
+            <div className='shadow-md bg-primary-light py-2 px-2'>
                 <div className='container flex justify-between items-center'>
+
                     {/* Left Section (Logo) */}
                     <div className='flex-shrink-0 ml-2 sm:ml-0'>
-                        <a href={logoLetter.link} className='font-bold text-secondary font-dafoe text-2xl sm:text-4xl flex gap-2 items-center'>
-                            {/* <img className='w-[36px] h-auto uppercase' alt='logo' src={Logo} /> */}
+                        <a href={logoLetter.link} className='font-bold text-secondary font-dafoe text-2xl sm:text-3xl flex gap-2 items-center'>
                             {logoLetter.logo}
                         </a>
                     </div>
@@ -49,26 +49,29 @@ function Header() {
                         }
                     </div>
 
-                    {/* LangSwicher */}
+                    {/* LangSwicher (for large screens only) */}
+                    <div className='hidden md:flex justify-center items-center'>
+                        <LangSwicher />
+                    </div>
 
-                    <LangSwicher />
-
-                    {/* DarkMode Button and themes*/}
-                    <div className='flex justify-center items-center space-x-4'>
+                    {/* DarkMode Button and themes */}
+                    <div className='flex justify-center items-center space-x-2 mr-2 sm:mr-0'>
                         <div className='sm:hidden'>
                             <MobileThemes />
                         </div>
-                        <div className="mr-2 sm:mr-0">
+                        <div className="">
                             <DarkModeButton />
                         </div>
                     </div>
 
-                    {/* Mobile Menu Icon */}
-                    <div onClick={handlePopUp} className='md:hidden absolute left-1/2 transform -translate-x-1/2'>
-                        {
-                            isMenuOpen ? < IoClose className='text-3xl cursor-pointer' /> : <IoMdMenu className='text-3xl cursor-pointer' />
-                        }
-
+                    {/* Mobile Menu Icon with LangSwicher */}
+                    <div className='md:hidden flex items-center space-x-4 absolute left-1/2 transform -translate-x-1/2'>
+                        <LangSwicher /> {/* Centered Language Switcher */}
+                        <div onClick={handlePopUp} className=''>
+                            {
+                                isMenuOpen ? <IoClose className='text-3xl cursor-pointer' /> : <IoMdMenu className='text-3xl cursor-pointer' />
+                            }
+                        </div>
                     </div>
 
                 </div>

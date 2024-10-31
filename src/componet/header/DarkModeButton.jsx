@@ -47,7 +47,7 @@ function DarkModeButton() {
 
     return (
         <div
-            className="flex items-center w-[24px] h-[24px] md:w-[41px] md:h-[21px] border border-theme_border hover:border-primary_light rounded-full bg-theme_bg cursor-pointer md:drop-shadow-[1px_1px_1px_white]"
+            className="flex items-center justify-center md:justify-start w-[24px] h-[24px] md:w-[40px] md:h-[21px] border border-theme_border hover:border-primary_light rounded-full bg-theme_bg cursor-pointer md:drop-shadow-[1px_1px_1px_white]"
             onClick={handleToggle}
         >
             <div className={`transform bg-theme_fg rounded-full p-[1px] ${themeMode === 'dark' ? 'md:translate-x-full' : ''} transition-transform duration-300`}>
