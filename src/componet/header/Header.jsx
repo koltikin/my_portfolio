@@ -24,7 +24,7 @@ function Header() {
     return (
         <div className='fixed w-[100%] bg-theme_fg drop-shadow-[1px_1px_1px_white] z-40'>
             <div className='shadow-md bg-primary-light py-2 px-2'>
-                <div className='hidden container sm:flex justify-between items-center'>
+                <div className='container flex justify-between items-center'>
 
                     {/* Left Section (Logo) */}
                     <div className='flex-shrink-0 ml-2 sm:ml-0'>
@@ -61,38 +61,8 @@ function Header() {
 
                     {/* DarkMode Button & LangSwicher */}
 
-                    <div className="hidden sm:flex md:gap-4 justify-center items-center">
+                    <div className="flex gap-2 md:gap-4 justify-center items-center">
                         <LangSwicher />
-                        <DarkModeButton />
-                    </div>
-
-
-
-
-                </div>
-
-
-                <div className='sm:hidden container flex items-center'>
-
-                    {/* Left Section (Logo) */}
-                    <div className='flex-shrink-0 ml-2 sm:ml-0'>
-                        <a href={logoLetter.link} className='font-bold text-secondary font-dafoe text-2xl sm:text-3xl flex gap-2 items-center'>
-                            {logoLetter.logo}
-                        </a>
-                    </div>
-
-                    {/* Mobile Menu Icon */}
-                    <div className='md:hidden flex items-center'>
-                        <div onClick={handlePopUp} className=''>
-                            {
-                                isMenuOpen ? <IoClose className='text-3xl cursor-pointer' /> : <IoMdMenu className='text-3xl cursor-pointer' />
-                            }
-                        </div>
-                    </div>
-
-                    {/* DarkMode Button & MobileThemes */}
-
-                    <div className="sm:hidden flex md:gap-4 justify-center items-center">
                         <MobileThemes />
                         <DarkModeButton />
                     </div>

@@ -6,7 +6,7 @@ import { themes } from '../../content/Contents';
 
 const MobileThemes = () => {
     return (
-        <div className="flex justify-start bg-primary rounded-full h-5 w-5">
+        <div className="flex sm:hidden justify-start bg-primary rounded-full h-5 w-5">
             <Tabs />
         </div>
     );
