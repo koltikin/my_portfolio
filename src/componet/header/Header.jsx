@@ -24,7 +24,7 @@ function Header() {
     return (
         <div className='fixed w-[100%] bg-theme_fg drop-shadow-[1px_1px_1px_white] z-40'>
             <div className='shadow-md bg-primary-light py-2 px-2'>
-                <div className='container flex justify-between items-center'>
+                <div className='hidden container sm:flex justify-between items-center'>
 
                     {/* Left Section (Logo) */}
                     <div className='flex-shrink-0 ml-2 sm:ml-0'>
@@ -49,24 +49,40 @@ function Header() {
                         }
                     </div>
 
-                    {/* LangSwicher (for large screens only) */}
-                    <div className='hidden md:flex justify-center items-center'>
+                    {/* Mobile Menu Icon */}
+                    <div className='md:hidden flex items-center'
+                        onClick={handlePopUp}>
+
+                        {
+                            isMenuOpen ? <IoClose className='text-3xl cursor-pointer' /> : <IoMdMenu className='text-3xl cursor-pointer' />
+                        }
+
+                    </div>
+
+                    {/* DarkMode Button & LangSwicher */}
+
+                    <div className="hidden sm:flex md:gap-4 justify-center items-center">
                         <LangSwicher />
+                        <DarkModeButton />
                     </div>
 
-                    {/* DarkMode Button and themes */}
-                    <div className='flex justify-center items-center space-x-2 mr-2 sm:mr-0'>
-                        <div className='sm:hidden'>
-                            <MobileThemes />
-                        </div>
-                        <div className="">
-                            <DarkModeButton />
-                        </div>
+
+
+
+                </div>
+
+
+                <div className='sm:hidden container flex items-center'>
+
+                    {/* Left Section (Logo) */}
+                    <div className='flex-shrink-0 ml-2 sm:ml-0'>
+                        <a href={logoLetter.link} className='font-bold text-secondary font-dafoe text-2xl sm:text-3xl flex gap-2 items-center'>
+                            {logoLetter.logo}
+                        </a>
                     </div>
 
-                    {/* Mobile Menu Icon with LangSwicher */}
-                    <div className='md:hidden flex items-center space-x-4 absolute left-1/2 transform -translate-x-1/2'>
-                        <LangSwicher /> {/* Centered Language Switcher */}
+                    {/* Mobile Menu Icon */}
+                    <div className='md:hidden flex items-center'>
                         <div onClick={handlePopUp} className=''>
                             {
                                 isMenuOpen ? <IoClose className='text-3xl cursor-pointer' /> : <IoMdMenu className='text-3xl cursor-pointer' />
@@ -74,7 +90,19 @@ function Header() {
                         </div>
                     </div>
 
+                    {/* DarkMode Button & MobileThemes */}
+
+                    <div className="sm:hidden flex md:gap-4 justify-center items-center">
+                        <MobileThemes />
+                        <DarkModeButton />
+                    </div>
+
+
+
+
                 </div>
+
+
             </div>
         </div>
     );
