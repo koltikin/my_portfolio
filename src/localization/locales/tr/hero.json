@@ -1,5 +1,5 @@
 {
-    "heading": "Hi I Am <strong>{{name}}</strong>",
-    "subheading": "I am a passionate Java Software Engineer and mathematician with expertise in core Java, Spring Framework, and Microservices Architecture. Eager to learn new technologies and stay updated on industry trends. I enjoy sharing knowledge and collaborating with the community. Additionally, I have experience with React and Next.js for front-end development.",
-    "buttonText": "Download CV"
+    "heading": "Merhaba Ben <strong>{{name}}</strong>",
+    "subheading": "Ben Core Java, Spring Framework ve Microservice Mimarisi konularında uzmanlaşmış, tutkulu bir Java Yazılım Mühendisi ve matematikçiyim. Bilgi paylaşmayı seven ve topluluklarla aktif olarak iş birliği yapmaktan keyif alan biriyim. Ek olarak ,front-end geliştirme için React ve Next.js ile de deneyim sahibiyim.",
+    "buttonText": "CV'yi İndir"
 }
