@@ -10,18 +10,22 @@ import enHero from './locales/en/hero.json'
 import trCommon from './locales/tr/common.json'
 import trHeader from './locales/tr/header.json'
 import trHero from './locales/tr/hero.json'
+import projects from './locales/en/projects.json'
 
 const resources = {
     en: {
         common: enCommon,
         header: enHeader,
         hero: enHero,
+        projects: projects,
+
 
     },
     tr: {
         common: trCommon,
         header: trHeader,
         hero: trHero,
+        projects: projects,
     },
 };
 
