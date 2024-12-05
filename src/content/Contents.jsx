@@ -72,6 +72,89 @@ export const useHeroContent = (themeMode) => {
     };
 };
 
+export const useProjectsContent = (themeMode) => {
+    const { t } = useTranslation('projects');
+
+    return {
+        title: t('title'),
+        subtitle: t('subtitle'),
+        projects: t('projects', { returnObjects: true }).map((project, index) => ({
+            title: project.title,
+            description: project.description,
+            image: getImageForProject(project.title),  // Customize this based on project title or other criteria
+            links: {
+                githubLink: getGitHubLinkForProject(project.title),
+                liveDemo: getLiveDemoLinkForProject(project.title),
+                details: getDetailsForProject(project.title),
+            }
+        })),
+    };
+};
+
+// Helper function to set images based on project title
+const getImageForProject = (projectTitle) => {
+    switch (projectTitle) {
+        case 'Ticketing App':
+            return ticketing;
+        case 'Accounting App':
+            return accounting;
+        case 'Ecommerce Backend Project':
+            return ecommerceBackend;
+        case 'Etlas Business Management App':
+            return etlasBusiness;
+        default:
+            return defaultImage;
+    }
+};
+
+// Helper function to set gitHub links based on project title
+const getGitHubLinkForProject = (projectTitle) => {
+    switch (projectTitle) {
+        case 'Ticketing App':
+            return 'https://github.com/koltikin/ticketing-applicaton';
+        case 'Accounting App':
+            return 'https://github.com/koltikin/my-accounting-app';
+        case 'Ecommerce Backend Project':
+            return 'https://github.com/koltikin/uydev-ecommerce';
+        case 'Etlas Business Management App':
+            return 'https://github.com/koltikin/Etlas';
+        default:
+            return 'https://github.com/koltikin';
+    }
+};
+
+// Helper function to set live demo based on project title
+const getLiveDemoLinkForProject = (projectTitle) => {
+    switch (projectTitle) {
+        case 'Ticketing App':
+            return ticketing;
+        case 'Accounting App':
+            return accounting;
+        case 'Ecommerce Backend Project':
+            return ecommerceBackend;
+        case 'Etlas Business Management App':
+            return etlasBusiness;
+        default:
+            return defaultImage;
+    }
+};
+
+// Helper function to set images based on project title
+const getDetailsForProject = (projectTitle) => {
+    switch (projectTitle) {
+        case 'Ticketing App':
+            return ticketing;
+        case 'Accounting App':
+            return accounting;
+        case 'Ecommerce Backend Project':
+            return ecommerceBackend;
+        case 'Etlas Business Management App':
+            return etlasBusiness;
+        default:
+            return defaultImage;
+    }
+};
+
 
 export const projects = [
     {
@@ -95,7 +178,7 @@ export const projects = [
         }
     },
     {
-        title: 'Etlas',
+        title: 'Ecommerce Backend App',
         description: 'This is a simple company work management application',
         image: etlas,
         links: {
