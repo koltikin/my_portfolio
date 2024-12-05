@@ -7,8 +7,8 @@ import { RiServiceLine, RiProjectorLine } from "react-icons/ri";
 import { MdOutlinePermContactCalendar } from "react-icons/md";
 import ticketing from '../assets/images/projects/ui-project-1.jpg';
 import accounting from '../assets/images/projects/ui-project-2.jpg';
-import ecommerace from '../assets/images/projects/web-project-1.jpg';
-import etlas from '../assets/images/projects/web-project-2.jpg';
+import ecommerceBackend from '../assets/images/projects/web-project-1.jpg';
+import etlasBusiness from '../assets/images/projects/web-project-2.jpg';
 
 import backend from "../assets/images/skills/backend.png";
 import ps from "../assets/images/skills/ps.png";
@@ -72,7 +72,7 @@ export const useHeroContent = (themeMode) => {
     };
 };
 
-export const useProjectsContent = (themeMode) => {
+export const useProjectsContent = () => {
     const { t } = useTranslation('projects');
 
     return {
@@ -127,15 +127,15 @@ const getGitHubLinkForProject = (projectTitle) => {
 const getLiveDemoLinkForProject = (projectTitle) => {
     switch (projectTitle) {
         case 'Ticketing App':
-            return ticketing;
+            return 'https://ticketing.uydev.com.tr';
         case 'Accounting App':
-            return accounting;
+            return 'https://accounting.uydev.com.tr';
         case 'Ecommerce Backend Project':
-            return ecommerceBackend;
+            return 'https://ecommerce.uydev.com.tr';
         case 'Etlas Business Management App':
-            return etlasBusiness;
+            return 'https://etlas.uydev.com.tr';
         default:
-            return defaultImage;
+            return 'https://uydev.com.tr';
     }
 };
 
@@ -154,50 +154,6 @@ const getDetailsForProject = (projectTitle) => {
             return defaultImage;
     }
 };
-
-
-export const projects = [
-    {
-        title: 'Ticketing App',
-        description: 'This is a simple ticketing project like jira',
-        image: ticketing,
-        links: {
-            githubLink: '#projects',
-            liveDemo: '#projects',
-            details: '#projects',
-        }
-    },
-    {
-        title: 'Accounting App',
-        description: 'This is a simple accounting project',
-        image: accounting,
-        links: {
-            githubLink: '#projects',
-            liveDemo: '#projects',
-            details: '#projects',
-        }
-    },
-    {
-        title: 'Ecommerce Backend App',
-        description: 'This is a simple company work management application',
-        image: etlas,
-        links: {
-            githubLink: '#projects',
-            liveDemo: '#projects',
-            details: '#projects',
-        }
-    },
-    {
-        title: 'Ecommerce BackEnd Project',
-        description: 'This is a simple ecommerce backEnd application secured with keycloak',
-        image: ecommerace,
-        links: {
-            githubLink: '#projects',
-            liveDemo: '#projects',
-            details: '#projects',
-        }
-    },
-];
 
 export const skills = {
     title: "Skills",
