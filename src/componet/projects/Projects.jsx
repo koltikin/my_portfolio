@@ -7,7 +7,6 @@ import { useProjectsContent } from '../../content/Contents';
 
 function Projects() {
     const { title, subtitle, projects } = useProjectsContent();
-    console.log(projects)
     return (
         <div id='projects' className='w-[100%] bg-theme_bg'>
             <div className='container mt-[80px]'>
